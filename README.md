@@ -1,2 +1,2 @@
 # AdaptiveWebsite
-Adaptived website
+Adaptive website
