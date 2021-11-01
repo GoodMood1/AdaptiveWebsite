@@ -1,0 +1,26 @@
+#content { 
+    padding-right: 0.5%; 
+    padding-left: 0.5%; 
+}
+
+#content {
+ top: 82px; 
+ left:9%; 
+ min-width:50%;
+ bottom: 0; right: 0;
+}
+#content p{
+margin-left: 5%;
+}
+.headertd{
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+}
+.fixed{
+    Position: fixed;
+    margin-left: 91%;
+    margin-top: 30%;
+    width:6%;
+    opacity: 50%;
+    }

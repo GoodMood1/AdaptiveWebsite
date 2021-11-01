@@ -1,0 +1,232 @@
+@import url("forms.css");
+@import url("pos.css");
+$fgb:black;
+%article-template{
+      position: absolute;
+      font-size: 2vw;
+    }
+    @mixin  posA {
+        position: relative;
+      }
+.slider {
+    .item4 {
+        img{
+        width: 100%;
+        height:100%;
+        margin-left: -50%;
+        background-size: cover;
+        position: absolute;
+        };
+      };
+    .previous, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color:black;
+        font-weight: bold;
+        font-size: 16px;
+        transition: 0.6s ease;
+      }
+.next {
+  right: 6%;
+  border-radius: 3px 0 0 3px;
+  color: black;
+};
+.previous {
+    right: 90%;
+    border-radius: 3px 0 0 3px;
+    color: black;
+  };
+  .previous:hover,.next:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+  };
+  .item4 {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  };
+  width: 100%;
+  @include posA();
+  height: 100%;
+}
+.phonetop2{
+    margin-left: 85%;
+    @extend %article-template;
+ }
+.ul2{
+    list-style-type: none;
+    text-align: left;
+    margin-top: 4%;
+}
+            #fvz ul{
+        margin-left: 29%;
+        padding-left: 0px;
+        list-style: none;
+    }
+    #fvz li { 
+        float: left;
+    }
+    .fff li img{
+        width: 45px;
+    }
+    #fvz ul a {
+        display: block;
+        width: 7em;
+        padding:10px;
+        border-left: 1px solid #ccc;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    #fvz ul a:hover{
+        background:linear-gradient(#000000, #b47b00);
+        color: #f4f4f4;
+    }
+    .anim1{
+        border: 2px darkred solid;
+        background-color:rgb(184, 183, 136);
+    }
+   *{
+        box-sizing: border-box;
+    }
+    #nav{
+        text-indent: -10%;
+        float:left;
+        width: 100%;
+        font-size: 1.5vw;
+        clear:both;
+    }
+    #nav ul{
+        margin-left: 33%;
+        padding-left: 0px;
+        list-style: none;
+    }
+    #nav li { 
+        float: left;
+    }
+    #nav ul a {
+        display: block;
+        width: 7em;
+        padding:10px;
+        border-left: 1px solid #ccc;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    #nav ul li:last-child a {
+         
+        border-right: 1px solid #ccc;
+    }
+    #nav ul a:hover{
+        background:linear-gradient(#000000, #b47b00);
+        color: #f4f4f4;
+    }
+    .bbb:hover{
+        background:linear-gradient(#000000, #b47b00);
+    }
+    ul:after{
+        content: " ";
+        display:table;
+        clear:both;
+    }
+    #content{
+        clear:both;
+    }
+        .grid{
+    display: grid;
+    border: 1px solid $fgb;
+}
+.grid-item{
+    border: 1px solid $fgb;
+}
+.grid-c-header{
+grid-area:header;
+}
+.grid-c-sidebar{
+    grid-area:sidebar;
+}
+.grid-c-main{
+    grid-area:main;
+}
+.grid-c-footer{
+    grid-area:footer;
+}
+.grid-b-footer{
+    grid-row: middle /span 2;
+}
+.grid-c-footer2{
+    grid-area:footer2;
+}
+.grid-c-footer3{
+    grid-area:footer3;
+}
+.grid-c-left_content{
+    grid-area:left_content;
+}
+.grid-c-ADV_1{
+    grid-area: ADV_1;
+}
+.grid-c-ADV_2{
+    grid-area: ADV_2;
+}
+.grid-c-about{
+    grid-area: about;
+}
+@media(min-width:280px) and (max-width:374px){
+    .phonetop2{
+        position: absolute;
+        margin-left: 100%;
+        margin-top: 16%;
+        font-size: 2vw;
+    }
+}
+@media(min-width:375px)and (max-width:413px){
+    .phonetop2{
+        margin-left: 90%;
+        margin-top: 14%;
+        @extend %article-template;
+    }
+}
+.fonttop{
+    font-size: 1.5vw;
+}
+.amenu{
+    color: aliceblue;
+}
+.amenu:hover{
+    color: rgb(253, 249, 188);
+}
+.backgroundmenu{
+background: linear-gradient(#ac6a00, #4e3000);
+}
+.grid-c{
+    margin-left: -1%;
+    margin-top: 2%;
+    font-size:large;
+    font-weight: bold;
+    text-align: center;
+    grid-template-rows: repeat(5,100px);
+    grid-template-areas: 
+                   "header header header header header header"
+                   "sidebar about about about about ADV_1"
+                   "sidebar about about about about ADV_1"
+                   "sidebar about about about about ADV_1"
+                   "sidebar about about about about ADV_2"
+                   "sidebar main main main main ADV_2"
+                   "sidebar main main main main left_content"
+                   "footer2 footer2 footer2 footer2 footer2 footer2"
+                   ;
+}
+@keyframes fade {
+
+  from {
+      opacity: 0.4;
+      z-index: 30;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
